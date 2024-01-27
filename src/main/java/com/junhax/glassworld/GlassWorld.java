@@ -35,6 +35,7 @@ public class GlassWorld implements ModInitializer {
         }
         try {
             // Getting ORES
+            //OVERWORLD
             BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CUSTOM_ORE_PLACED_KEY);
             BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, DIAMOND_ORE_PLACED_KEY);
         } catch (Exception e) {
