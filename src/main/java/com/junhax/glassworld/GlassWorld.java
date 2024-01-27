@@ -34,6 +34,7 @@ public class GlassWorld implements ModInitializer {
             System.out.println("Failed when trying to load the blocks, items and effects!");
         }
         try {
+            // Getting ORES
             BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CUSTOM_ORE_PLACED_KEY);
             BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, DIAMOND_ORE_PLACED_KEY);
         } catch (Exception e) {
